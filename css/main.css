@@ -1,0 +1,242 @@
+body {
+    font-family: Tahoma, Verdana;
+    font-size: 90%;
+    background: #ccc;
+    overflow: hidden;
+}
+h1 {font-size: 90%;margin:0px;}
+input {border: solid 1px #999;}
+label {font-size: 80%;}
+/* Classes */
+.absolute_panel {
+    position: absolute;
+    border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: white;
+    box-shadow: 1px 1px 2px #666;
+    -o-box-shadow: 1px 1px 2px #666;
+    -moz-box-shadow: 1px 1px 2px #666;
+    -webkit-box-shadow: 1px 1px 2px #666;
+}
+.modalTitle {
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+	color: #ccc;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 2px #666;
+}
+.modalBar {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.inside-panel {
+	margin:3px;
+}
+.check {
+	display: inline-block;
+	width: 10px;
+    height: 10px;
+    margin: 0px;
+    vertical-align: middle;
+}
+.color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    border: solid 1px black;
+    outline: solid 1px white;
+    vertical-align: middle;
+}
+.text {
+	display: inline-block;
+	width: 113px;
+	margin-left: 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+.tweet-text {
+	font-size: 80%;
+}
+.bullet {
+    display: inline-block;
+    font-size: 9px;
+    line-height: 16px;
+    width: 32px;
+    height: 16px;
+    margin-left: 3px;
+    font-weight: bold;
+    vertical-align: middle;
+    background: red;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 1px 2px #666666;
+    -o-box-shadow: 0px 1px 2px #666666;
+    -moz-box-shadow: 0px 1px 2px #666666;
+    -webkit-box-shadow: 0px 1px 2px #666666;
+}
+
+.twitt {
+    clear: both;
+    margin: 5px;
+    background: #eee;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0px 1px 2px black;
+    -o-box-shadow: 0px 1px 2px black;
+    -moz-box-shadow: 0px 1px 2px black;
+    -webkit-box-shadow: 0px 1px 2px black;
+}
+.avatar {
+    vertical-align: middle;
+    margin: 5px;
+    width: 32px;
+    height: 32px;
+}
+.query-output {
+	cursor: pointer;
+	font-size: 80%;
+	margin: 3px;
+	padding: 2px;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.query-output td {
+	font-size: 80%;
+}
+.queryTerm {
+	display: inline-block;
+	margin: 3px;
+	width: 105px;
+	height: 18px;
+}
+.queryTermText {
+	display: inline-block;
+	width: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* IDs */
+#left-panel-1 {
+	top: 3px;
+	left: 3px;
+	height: 100px;
+	width: 200px;
+}
+#left-panel-2 {
+	top: 106px;
+	left: 3px;
+	bottom: 206px;
+	width: 200px;
+}
+#left-panel-3 {
+	left: 3px;
+	bottom: 3px;
+	height: 200px;
+	width: 200px;
+}
+
+#right-panel {
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	width: 300px;
+}
+
+#top-panel {
+	top: 3px;
+	left: 206px;
+	right: 306px;
+	height: 200px;
+}
+
+#center-panel {
+	top: 206px;
+	left: 206px;
+	right: 306px;
+	bottom: 3px;
+	overflow: auto;
+}
+
+#terms {
+	position: absolute;
+	top: 45px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	overflow: auto;
+}
+
+#consultDetail {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	height: 30px;
+}
+
+#timeline {
+	position: absolute;
+	top: 36px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	overflow: auto;
+}
+
+#consultDelay {
+	position:absolute;
+	font-size:10px;
+	line-height: 10px;
+	height: 18px;
+	left: 0px;
+	right: 83px;
+	border: solid 1px #ccc;
+	overflow: hidden;
+}
+
+#consultDelay-label {
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom: 0px;
+	right: 0px;
+	text-align: center;
+	padding: 4px;
+}
+
+#consultDelay-progress {
+	position:absolute;
+	top:0px;
+	bottom: 0px;
+	right: 0px;
+	background: #EEEEEE;
+	width: 100%;
+}
+
+#modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(255,255,255,0.6);
+}
+#modalText {
+	text-align: center;
+}

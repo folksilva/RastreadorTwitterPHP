@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Rastreador do Twitter</title>
+                <link href="css/main.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                <script type="text/javascript" src="js/main.js"></script>
+                <script type="text/javascript" src="js/util.js"></script>
+                <script>
+                    google.load("jquery","1.5");
+                    google.load("visualization","1",{packages:["corechart","gauge"]});
+                    google.setOnLoadCallback(init);
+                </script>
+	</head>
+	<body>
+        <div class="absolute_panel" id="left-panel-1">
+        	<div class="inside-panel">
+	        	<h1>Opções da consulta</h1>
+	        	<form action="javascript:doChangeSettings();">
+	        		<label title="Quantidade de tweets a serem processados a cada consulta. Apenas os novos são contabilizados.">
+	        			<span style="display:inline-block;width:137px;vertical-align:middle;">Tweets por consulta:</span> 
+	        			<input style="display:inline-block;width:50px;vertical-align:middle;text-align: right;" type="text" id="tpc" />
+        			</label>
+	        		<label title="Intervalo em segundos entre as consultas.">
+	        			<span style="display:inline-block;width:137px;vertical-align:middle;">Intervalo de consultas:</span>
+	        			<input style="display:inline-block;width:50px;vertical-align:middle;text-align: right;" type="text" id="idc" />
+        			</label>
+	        		<div align="center"><button type="submit">Salvar</button></div>
+	        	</form>
+        	</div>
+        </div>
+        <div class="absolute_panel" id="left-panel-2">
+        	<div class="inside-panel">
+        		<h1>Termos da consulta</h1>
+        		<form action="javascript:doAddTerm();">
+        			<input style="width:117px;margin:0px" id="txtTermo" type="text" title="Digite o termo a ser consultado"/>	
+        			<button style="width:70px;margin:0px" type="submit">Adicionar</button>
+        			<div id="terms"></div>
+        		</form>
+    		</div>
+        </div>
+        <div class="absolute_panel" id="left-panel-3">
+        	<div class="inside-panel">
+        		<h1>Estátisticas</h1>
+        		<div style="height:100%;" id="gauge"></div>
+    		</div>
+        </div>
+        <div class="absolute_panel" id="top-panel">
+        	
+        </div>
+        <div class="absolute_panel" id="center-panel">
+        	
+        </div>
+        <div class="absolute_panel" id="right-panel">
+        	<div id="consultDetail">
+        		<div id="consultDelay">
+        			<div id="consultDelay-progress"></div>
+        			<div id="consultDelay-label"></div>
+        		</div>
+        		<button type="button" style="float:right;margin:0px;width:80px;height:20px;padding:0px;" onclick="doConsult()">Consultar</button>
+        	</div>
+        	<div id="timeline"></div>
+        </div>
+	    <div id="modal">
+	    	<div class="modalTitle"><img src="img/bird.png"/><br>Rastreador do Twitter</div>
+	    	<div class="modalBar"><img src="img/loader.gif"/></div>
+	    	<div id="modalText">Realizando uma nova consulta...</div>
+    	</div>
+        </body>
+</html>
