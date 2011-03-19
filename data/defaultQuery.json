@@ -1,21 +1,11 @@
+// Lista de termos a serem carregados na inicialização do aplicativo
 {"q":[
-    "#sccp",
-    "#timao",
-    "#corinthians",
-    "#euquerotvcorinthians",
-    "#vaiCorinthians",
-    "@SiteCorinthians",
-    "@ShopTimao",
-    "@sgcorinthiano",
-    "@timaotur",
-    "@radiocoringao",
-    "@100anosdetimao",
-    "@fieltorcedor_11",
-    "@corinthianscult",
-    "@corinthiansfa",
-    "@corinthiansmag",
-    "@vlpoderoso",
-    "@tv_corinthians",
-    "@timao_ontheroad",
-    "@timedopovosccp"
+	"@folksilva",
+	"#linux",
+	"#ubuntu",
+	"#javascript",
+	"#jquery",
+	"@jquery",
+	"#google",
+	"#twitter"
 ]}

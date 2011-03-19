@@ -1,0 +1,7 @@
+Aplicativo em Javascript que monitora a popularidade de termos no Twitter.
+Para funcionar é preciso apenas um servidor php para servir como um proxy para o rastreador.
+
+Caso encontre algum bug ou tenha uma idéia de melhoria utilize este repositório.
+
+--
+Luiz Fernando da Silva <folksilva@gmail.com>
